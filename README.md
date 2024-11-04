@@ -12,7 +12,7 @@ Envo is a secure environment variable management gem for Rails applications that
 - Rails integration with automatic initialization
 - YAML serialization for complex data types
 
-## Installation
+### Installation
 
 Add this line to your application's Gemfile:
 
@@ -26,7 +26,7 @@ And then execute:
 $ bundle install
 ```
 
-## Setup
+### Setup
 
 1. Generate an encryption key:
 
@@ -117,7 +117,7 @@ Envo automatically initializes with Rails and loads environment variables from:
 - `.env.{environment}` (e.g., `.env.development`, `.env.production`)
 - Falls back to `.env` if environment-specific file doesn't exist
 
-## Security Considerations
+### Security Considerations
 
 - Encryption keys must be 64-character hexadecimal strings (32 bytes)
 - Uses AES-256-GCM for encryption with authenticated encryption
@@ -125,7 +125,7 @@ Envo automatically initializes with Rails and loads environment variables from:
 - Thread-safe operations for concurrent access
 - Secure key rotation with atomic updates
 
-## Development Environment
+### Development Environment
 
 ```bash
 # Run tests
@@ -135,11 +135,9 @@ bundle exec rspec
 bin/console
 ```
 
-[Previous sections remain the same until Usage...]
 
-## Usage
 
-### Basic Usage
+## Advanced Usage
 
 ```ruby
 # Set an encrypted environment variable
